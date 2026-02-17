@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Glorious Public School - Hazaribagh
 
-## Getting Started
+Premium residential and day boarding school website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🎯 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This is the official website for Glorious Public School, Maheshra, Hazaribagh - a premier residential and day boarding school established in 1999, providing quality English medium education for Grades 1 to 10.
+
+## ✨ Features
+
+- **SEO Optimized**: Complete meta tags, OpenGraph, structured data (JSON-LD)
+- **Hyperlocal Keywords**: Targeted for Hazaribagh, Jharkhand
+- **Responsive Design**: Mobile-first approach, works on all devices
+- **Premium UI**: Professional design with smooth animations
+- **Static Export**: No backend required, can be deployed anywhere
+- **Performance**: Optimized for fast loading
+
+## 🏗️ Tech Stack
+
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- Static Export Compatible
+
+## 📁 Project Structure
+
+```
+saraswati-school/
+├── app/
+│   ├── layout.tsx          # Root layout with SEO
+│   ├── page.tsx            # Homepage
+│   ├── about/              # About page
+│   ├── admissions/         # Admissions page
+│   ├── facilities/         # Facilities page
+│   ├── results/            # Results page
+│   ├── blog/               # Blog page
+│   ├── contact/            # Contact page
+│   ├── sitemap.ts          # Dynamic sitemap
+│   └── robots.ts           # Robots.txt
+├── components/
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── CTASection.tsx
+│   ├── ResultsSection.tsx
+│   ├── PrincipalMessage.tsx
+│   ├── FacilitiesGrid.tsx
+│   └── Testimonials.tsx
+└── public/
+    └── robots.txt
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install dependencies:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Run development server:
+```bash
+npm run dev
+```
 
-## Learn More
+3. Build for production:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Export static site:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The static files will be in the `out` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design Features
 
-## Deploy on Vercel
+- **Color Scheme**: Deep Royal Blue (Primary), Saffron (Accent), White (Background)
+- **Typography**: Playfair Display (Headings), Inter (Body)
+- **Animations**: Smooth scroll, hover effects, transitions
+- **Components**: Sticky navbar, floating WhatsApp button, mobile call button
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Home**: Hero, Why Choose Us, Results, Principal Message, Facilities, Testimonials, Location
+2. **About**: School story, Vision & Mission, CBSE affiliation, Leadership, Core values
+3. **Admissions**: Eligibility, Documents, Fee structure, Enquiry form, FAQ
+4. **Facilities**: Detailed facility cards with features
+5. **Results**: Year-wise results, Toppers, Achievements
+6. **Blog**: 3 sample articles on education topics
+7. **Contact**: Contact form, Info, Map
+
+## 🔍 SEO Features
+
+- Unique title and meta description for each page
+- OpenGraph tags for social sharing
+- Structured data (School, Organization, LocalBusiness, FAQ)
+- Dynamic sitemap generation
+- Robots.txt included
+- Hyperlocal keywords naturally integrated
+
+## 📊 Performance
+
+- Static export for fast loading
+- Optimized images (unoptimized for static export)
+- Minimal JavaScript
+- CSS optimized with Tailwind
+
+## 🌐 Deployment
+
+Can be deployed to:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting service
+
+## 📝 Customization
+
+To customize for another school:
+1. Update school name and details in `layout.tsx`
+2. Modify colors in `tailwind.config.ts`
+3. Update content in page files
+4. Replace placeholder images in `/public/images/`
+5. Update contact information and location
+
+## 📄 License
+
+This is a demo project for educational purposes.
+
+## 🤝 Support
+
+For questions or support, contact the development team.
