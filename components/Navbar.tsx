@@ -31,7 +31,7 @@ export default function Navbar() {
     <>
       <div className="fixed top-0 left-0 right-0 z-[110] pointer-events-none">
         {/* Secondary Top Navbar - Fades out on scroll */}
-        <div className={`bg-primary-dark text-white py-2 transition-all duration-700 pointer-events-auto py-2 ${isScrolled ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
+        <div className={`hidden md:block bg-primary-dark text-white py-2 transition-all duration-700 pointer-events-auto py-2 ${isScrolled ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
           <div className="luxury-container flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Primary Liquid Navigation */}
-        <div className="flex justify-center w-full px-4 md:px-0">
+        <div className="flex justify-center w-full px-0 md:px-0">
           <nav
             className={`transition-all duration-700 pointer-events-auto ${isScrolled
               ? 'bg-white/80 backdrop-blur-2xl border border-white/40 py-2 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.15)] rounded-full luxury-container-scrolled'
@@ -85,7 +85,7 @@ export default function Navbar() {
                   />
                 </div> */}
                 {!isScrolled && (
-                  <div className="hidden xl:block">
+                  <div className="block">
                     <h1 className="text-xl font-bold tracking-tight leading-none mb-1 text-white">
                       GLORIOUS <span className="font-light text-primary-gold">PUBLIC SCHOOL</span>
                     </h1>
@@ -115,7 +115,7 @@ export default function Navbar() {
               <div className="flex items-center gap-4 shrink-0">
                 <Link
                   href="/admissions"
-                  className={`transition-all duration-700 overflow-hidden uppercase tracking-[0.2em] font-bold text-[12px] flex items-center gap-2 ${isScrolled
+                  className={`hidden lg:flex transition-all duration-700 overflow-hidden uppercase tracking-[0.2em] font-bold text-[12px] items-center gap-2 ${isScrolled
                     ? 'bg-primary text-white py-2 px-6 rounded-full hover:bg-primary/90'
                     : 'btn-luxury !px-6 !py-3'
                     }`}
@@ -127,7 +127,7 @@ export default function Navbar() {
                 {/* Mobile Menu Toggle (Within Liquid Nav) */}
                 <button
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  className={`lg:hidden p-2 transition-all duration-700 ${isScrolled ? 'text-primary' : 'text-white'}`}
+                  className={`lg:hidden p-0 transition-all duration-700 ${isScrolled ? 'text-primary' : 'text-white'}`}
                   aria-label="Toggle menu"
                 >
                   {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

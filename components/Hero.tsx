@@ -119,7 +119,7 @@ export default function Hero() {
       </div>
 
       {/* Quick Stats - Repositioned for breathing room */}
-      <div className="absolute bottom-60 left-0 w-full z-30 pointer-events-none">
+      <div className="absolute bottom-25 md:bottom-60 left-0 w-full z-30 pointer-events-none">
         <div className="luxury-container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 max-w-5xl">
             {[
